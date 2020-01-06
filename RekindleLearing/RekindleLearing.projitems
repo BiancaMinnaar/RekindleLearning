@@ -18,6 +18,18 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\Control\ServerInfoControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\Control\ClientInfoControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\Control\LinkButtonControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -51,6 +63,22 @@
       <DependentUpon>SystemView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\UserViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\Control\ServerInfoControlView.xaml.cs">
+      <DependentUpon>ServerInfoControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\ServerInfoControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\Control\ClientInfoControlView.xaml.cs">
+      <DependentUpon>ClientInfoControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\ClientInfoControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\Control\LinkButtonControlView.xaml.cs">
+      <DependentUpon>LinkButtonControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\LinkButtonControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\ISystemRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\SystemRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\ISystemService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\SystemService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />

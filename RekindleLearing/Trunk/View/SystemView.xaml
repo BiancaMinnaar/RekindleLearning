@@ -11,6 +11,7 @@
     <Grid Padding="0,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="4" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="40" />
             <RowDefinition Height="4" />
@@ -20,8 +21,16 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="4" />
         </Grid.ColumnDefinitions>
-        <StackLayout Orientation="Vertical" Grid.Column="1" Grid.Row="1" >
-            
+        <StackLayout Orientation="Vertical" Grid.Column="1" Grid.Row="1"
+            VerticalOptions="Start" HorizontalOptions="Center">
+                <control:LinkButtonControlView ViewModel={Binding Imprint} />
+                <control:LinkButtonControlView ViewModel={Binding TermsAndConditions} />
+                <control:LinkButtonControlView ViewModel={Binding Privacy} />
+                <control:LinkButtonControlView ViewModel={Binding EULA} />
+        </StackLayout>
+        <StackLayout Grid.Column="1" Grid.Row="2"
+            Orientation="Vertical">
+            <control:ServerInfoControlView
         </StackLayout>
     </Grid>
 </base:ProjectBaseContentPage>

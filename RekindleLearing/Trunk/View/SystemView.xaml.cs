@@ -11,10 +11,14 @@ namespace RekindleLearing.Implementation.View
         public SystemView()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
             BindingContext = _ViewController.InputObject;
         }
 
-        //#Bonsai Snippets - ViewControllerMethodCalls
+       void GetSystemInfo(object sender, EventArgs e)
+        {
+            _ViewController.GetSystemInfo()();
+        } //#Bonsai Snippets - ViewControllerMethodCalls
     }
 }
+
+

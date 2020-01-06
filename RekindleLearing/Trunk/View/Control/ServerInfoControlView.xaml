@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<b:ControlBase
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:b="clr-namespace:RekindleLearing.Root"
+    xmlns:m="clr-namespace:RekindleLearing.Trunk.ViewModel.Control"
+    xmlns:v="clr-namespace:RekindleLearing.Trunk.View.Control"
+    x:Class="RekindleLearing.Trunk.View.Control.ServerInfoControlView"
+    x:TypeArguments="v:ServerInfoControlView,m:ServerInfoControlViewModel">
+    <StackLayout HorizontalOptions="FillAndExpand">
+       <Label Text="{Binding HeadingLabel}"/>
+<Label Text="{Binding Version}"/>
+<Label Text="{Binding Build}"/>
+<Label Text="{Binding Date}"/>
+ <!--Bonsai Snippets - XAMLData-->
+    </StackLayout>
+</b:ControlBase>
