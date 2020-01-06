@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<base:ProjectBaseContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:RekindleLearing.Root.View"
+    xmlns:m="clr-namespace:RekindleLearing.Trunk.ViewModel"
+    xmlns:p="clr-namespace:RekindleLearing.Implementation.ViewController"
+    xmlns:b="clr-namespace:RekindleLearing.Implementation.View"
+    xmlns:control="clr-namespace:RekindleLearing.Trunk.View.Control"
+    xmlns:image="clr-namespace:MobileBonsai.View"
+    x:Class="RekindleLearing.Implementation.View.MyRekindleView" 
+    x:TypeArguments="p:MyRekindleViewController, m:MyRekindleViewModel">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <image:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Orientation="Vertical">
+        <StackLayout HeightRequest="30" />
+        <!--#Bonsai Snippets - Controls-->
+    </StackLayout>
+</base:ProjectBaseContentPage>
