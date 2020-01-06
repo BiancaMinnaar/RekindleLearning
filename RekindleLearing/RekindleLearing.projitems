@@ -62,6 +62,10 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\KnowledgeMatchView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -160,6 +164,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\CourseListViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\CourseListView.xaml.cs">
       <DependentUpon>CourseListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\IKnowledgeMatchViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\KnowledgeMatchViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\KnowledgeMatchViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\KnowledgeMatchView.xaml.cs">
+      <DependentUpon>KnowledgeMatchView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
