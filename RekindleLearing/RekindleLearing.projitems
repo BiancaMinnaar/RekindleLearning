@@ -42,6 +42,10 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\Control\CourseWideButtonControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -111,6 +115,10 @@
       <DependentUpon>ImageButtonControlView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\ImageButtonControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\Control\CourseWideButtonControlView.xaml.cs">
+      <DependentUpon>CourseWideButtonControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\CourseWideButtonControlViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />
