@@ -11,13 +11,11 @@ namespace RekindleLearing.Implementation.View
         public SystemView()
         {
             InitializeComponent();
+            _ViewController.GetSystemInfo()();
             BindingContext = _ViewController.InputObject;
         }
 
-       void GetSystemInfo(object sender, EventArgs e)
-        {
-            _ViewController.GetSystemInfo()();
-        } //#Bonsai Snippets - ViewControllerMethodCalls
+        //#Bonsai Snippets - ViewControllerMethodCalls
     }
 }
 

@@ -31,14 +31,14 @@
             <Style x:Key="BaseTextInput" TargetType="Entry">
                 <Setter Property="FontFamily" Value="Arial" />
                 <Setter Property="FontSize" Value="14" />
-                <Setter Property="TextColor" Value="{StaticResource S4TBlue}" />
-                <Setter Property="BackgroundColor" Value="{StaticResource lightGray}" />
+                <Setter Property="TextColor" Value="{StaticResource darkBlue}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource textGray}" />
             </Style>
             <!--/Controls-->
             
             <!--Buttons-->
             <Style x:Key="ClearButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
-                <Setter Property="BackgroundColor" Value="{StaticResource lightGray}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource textGray}" />
                 <Setter Property="TextColor" Value="{StaticResource textWhite}" />
                 <Setter Property="Padding" Value="4" />
             </Style>

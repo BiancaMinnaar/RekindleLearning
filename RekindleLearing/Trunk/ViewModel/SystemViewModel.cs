@@ -69,6 +69,16 @@ private ClientInfoControlViewModel clientInfoTile;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ClientInfoTile"));
             }
         }
+
+        public SystemViewModel()
+        {
+            ImprintLinkButton = new LinkButtonControlViewModel();
+            TermsAndConditonsLinkButton = new LinkButtonControlViewModel();
+            PrivacyPolicyLinkButton = new LinkButtonControlViewModel();
+            EULALinkButton = new LinkButtonControlViewModel();
+            ServerInfoTile = new ServerInfoControlViewModel();
+            ClientInfoTile = new ClientInfoControlViewModel();
+        }
  //#Bonsai Snippets - Properties
     }
 }

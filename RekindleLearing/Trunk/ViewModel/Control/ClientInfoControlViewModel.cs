@@ -6,19 +6,8 @@ namespace RekindleLearing.Trunk.ViewModel.Control
     public class ClientInfoControlViewModel : ProjectBaseViewModel, INotifyPropertyChanged
     {
         public new event PropertyChangedEventHandler PropertyChanged;
-
-       private string headingLabel;
-        public string HeadingLabel
-        {
-            get { return headingLabel; }
-            set
-            {
-                headingLabel = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("HeadingLabel"));
-            }
-        }
-
-private string version;
+       
+        private string version;
         public string Version
         {
             get { return version; }
@@ -29,7 +18,7 @@ private string version;
             }
         }
 
-private string iOSVesrion;
+        private string iOSVesrion;
         public string IOSVesrion
         {
             get { return iOSVesrion; }
@@ -40,7 +29,7 @@ private string iOSVesrion;
             }
         }
 
-private string date;
+        private string date;
         public string Date
         {
             get { return date; }

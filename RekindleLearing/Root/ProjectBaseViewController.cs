@@ -20,10 +20,10 @@ namespace RekindleLearing.Root.ViewController
         public bool HasSpecificResponse { get; set; }
 
         protected ProjectBaseViewController()
-            :base(new RestService(DependencyService.Get<INetworkInteraction>()), 
-            "Please email me at bminnaar@gmail for licencing or use previous versions.", 
-            ""
-            ,"")
+            :base(new RestService(DependencyService.Get<INetworkInteraction>()),
+            "587682495",
+            "RekindleLearing"
+            , "NYDAlySr6I+neL8hNPp1uejOMs2KPywXnPCMWQMqgqgMsd5bTRhEI5qwUgv2w8OzE3ffOvCOL68=")
         {
             _MasterRepo = MasterRepository.MasterRepo;
 

@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Windows.Input;
 using RekindleLearing.Root.ViewModel;
 
 namespace RekindleLearing.Trunk.ViewModel
@@ -17,7 +18,7 @@ namespace RekindleLearing.Trunk.ViewModel
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("UserName"));
             }
         }
-private string password;
+        private string password;
         public string Password
         {
             get { return password; }
@@ -27,7 +28,7 @@ private string password;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Password"));
             }
         }
-private ICommand loginFunction;
+        private ICommand loginFunction;
         public ICommand LoginFunction
         {
             get { return loginFunction; }
@@ -37,7 +38,8 @@ private ICommand loginFunction;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("LoginFunction"));
             }
         }
-private ICommand resetPasswordFunction;
+
+        private ICommand resetPasswordFunction;
         public ICommand ResetPasswordFunction
         {
             get { return resetPasswordFunction; }
