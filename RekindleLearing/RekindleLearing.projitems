@@ -54,6 +54,14 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\MyCoursesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\CourseListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -140,6 +148,18 @@
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\MyRekindleViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\MyRekindleView.xaml.cs">
       <DependentUpon>MyRekindleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\IMyCoursesViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\MyCoursesViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\MyCoursesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\MyCoursesView.xaml.cs">
+      <DependentUpon>MyCoursesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\ICourseListViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\CourseListViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\CourseListViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\CourseListView.xaml.cs">
+      <DependentUpon>CourseListView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

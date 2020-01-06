@@ -16,6 +16,9 @@ namespace RekindleLearing.Trunk.View
             Routing.RegisterRoute("system", typeof(SystemView));
             Routing.RegisterRoute("login", typeof(LoginView));
             Routing.RegisterRoute("dashboard", typeof(DashboardView));
+            Routing.RegisterRoute("myRekindle", typeof(MyRekindleView));
+            Routing.RegisterRoute("myCourses", typeof(MyCoursesView));
+            Routing.RegisterRoute("courseList", typeof(CourseListView));
             //#Bonsai Snippets - Routes
         }
     }
