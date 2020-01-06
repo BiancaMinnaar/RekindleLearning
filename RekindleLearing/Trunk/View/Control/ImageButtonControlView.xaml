@@ -8,6 +8,9 @@
     x:Class="RekindleLearing.Trunk.View.Control.ImageButtonControlView"
     x:TypeArguments="v:ImageButtonControlView,m:ImageButtonControlViewModel">
     <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+        <StackLayout.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding ActionCommand}" NumberOfTapsRequired="1" />
+        </StackLayout.GestureRecognizers>
        <Image Source="{Binding ImageName}" HorizontalOptions="Start" WidthRequest="25" HeightRequest="25"/>
        <Label Text="{Binding Text}" Style="{StaticResource BaseLabel}" HorizontalOptions="StartAndExpand"/>
  <!--Bonsai Snippets - XAMLData-->

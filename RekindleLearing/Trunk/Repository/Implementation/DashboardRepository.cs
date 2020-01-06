@@ -4,6 +4,7 @@ using RekindleLearing.Trunk.ViewModel;
 using RekindleLearing.Interface.Repository;
 using RekindleLearing.Interface.Service;
 using Xamarin.Forms;
+using System;
 
 namespace RekindleLearing.Implementation.Repository
 {
@@ -20,6 +21,19 @@ namespace RekindleLearing.Implementation.Repository
         public async Task ShowAboutAsync(DashboardViewModel model)
         {
             await Shell.Current.GoToAsync("system");
+        }
+
+        public async Task SetNavigationCommandsAsync(DashboardViewModel model)
+        {
+            model.MyRekindleModel.ActionCommand = new Command(() => NavigateRoute()("myRekindle"));
+            model.MyCoursesModel.ActionCommand = new Command(() => NavigateRoute()("myCourses"));
+            model.MoreCoursesModel.ActionCommand = new Command(() => NavigateRoute()("courseList"));
+            model.KnowledgeMatchModel.ActionCommand = new Command(() => NavigateRoute()("knowledgeMatch"));
+        }
+
+        Func<string, Task> NavigateRoute()
+        {
+            return async (route) => await Shell.Current.GoToAsync(route);
         }
 
         //#Bonsai Snippets - MethodDefinitions

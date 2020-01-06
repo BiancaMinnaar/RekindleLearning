@@ -11,6 +11,7 @@ namespace RekindleLearing.Implementation.View
         public DashboardView()
         {
             InitializeComponent();
+            _ViewController.SetNavigationCommands()();
             BindingContext = _ViewController.InputObject;
         }
 
@@ -19,7 +20,10 @@ namespace RekindleLearing.Implementation.View
             _ViewController.ShowAbout()();
         }
 
-        //#Bonsai Snippets - ViewControllerMethodCalls
+       void SetNavigationCommands(object sender, EventArgs e)
+        {
+            _ViewController.SetNavigationCommands()();
+        } //#Bonsai Snippets - ViewControllerMethodCalls
     }
 }
 

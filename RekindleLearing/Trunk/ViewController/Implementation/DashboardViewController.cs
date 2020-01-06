@@ -31,6 +31,13 @@ namespace RekindleLearing.Implementation.ViewController
                 await _Repository.ShowAboutAsync(InputObject);
             };
         }
+public Func<Task> SetNavigationCommands()
+        {
+            return async () =>
+            {
+                await _Repository.SetNavigationCommandsAsync(InputObject);
+            };
+        }
  //#Bonsai Snippets - Methods
     }
 }

@@ -1,6 +1,7 @@
 using System.ComponentModel;
 using RekindleLearing.Root.ViewModel;
 using RekindleLearing.Trunk.ViewModel.Control;
+using Xamarin.Forms;
 
 namespace RekindleLearing.Trunk.ViewModel
 {

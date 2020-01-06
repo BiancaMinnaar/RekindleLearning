@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Windows.Input;
 using RekindleLearing.Root.ViewModel;
 
 namespace RekindleLearing.Trunk.ViewModel.Control
@@ -29,6 +30,17 @@ namespace RekindleLearing.Trunk.ViewModel.Control
             }
         }
 
- //#Bonsai Snippets - Properties
+        private ICommand actionCommand;
+        public ICommand ActionCommand
+        {
+            get { return actionCommand; }
+            set
+            {
+                actionCommand = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ActionCommand"));
+            }
+        }
+
+        //#Bonsai Snippets - Properties
     }
 }
