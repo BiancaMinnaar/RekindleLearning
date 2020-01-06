@@ -43,6 +43,11 @@
                 <Setter Property="TextColor" Value="{StaticResource textWhite}" />
                 <Setter Property="Padding" Value="4" />
             </Style>
+            <Style x:Key="OrangeButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="{StaticResource OrangeText}" />
+                <Setter Property="TextColor" Value="{StaticResource textWhite}" />
+                <Setter Property="Padding" Value="4" />
+            </Style>
 
             <Style x:Key="LinkButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
                 <Setter Property="BackgroundColor" Value="Transparent" />
@@ -55,10 +60,9 @@
             <Style x:Key="boldLabel" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
                 <Setter Property="FontAttributes" Value="Bold" />
             </Style>
-            <Style x:Key="HeadingLabel" TargetType="Label" BasedOn="{StaticResource boldLabel}">
-                <Setter Property="FontSize" Value="16" />
-            </Style>
-            
+            <Style x:Key="MainHeadingLabel" TargetType="Label" BasedOn="{StaticResource boldLabel}">
+                <Setter Property="FontSize" Value="20" />
+            </Style>            
             <!--Centered Label-->
             <Style x:Key="centerLabel" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
                 <Setter Property="HorizontalTextAlignment" Value="Center" />

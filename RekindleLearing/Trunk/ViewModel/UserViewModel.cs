@@ -49,6 +49,16 @@ namespace RekindleLearing.Trunk.ViewModel
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ResetPasswordFunction"));
             }
         }
+private bool isLoggedIn;
+        public bool IsLoggedIn
+        {
+            get { return isLoggedIn; }
+            set
+            {
+                isLoggedIn = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("IsLoggedIn"));
+            }
+        }
  //#Bonsai Snippets - Properties
     }
 }
