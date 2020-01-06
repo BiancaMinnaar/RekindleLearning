@@ -8,10 +8,10 @@
     x:Class="RekindleLearing.Trunk.View.Control.ClientInfoControlView"
     x:TypeArguments="v:ClientInfoControlView,m:ClientInfoControlViewModel">
     <StackLayout HorizontalOptions="FillAndExpand">
-       <Label Text="{Binding HeadingLabel}"/>
-<Label Text="{Binding Version}"/>
-<Label Text="{Binding IOSVesrion}"/>
-<Label Text="{Binding Date}"/>
- <!--Bonsai Snippets - XAMLData-->
+        <Label Style="{StaticResource HeadingLabel}" Text="Client" />
+        <Label Style="{StaticResource BaseLabel}" Text="{Binding Version, StringFormat='Version: {0}'}"/>
+        <Label Style="{StaticResource BaseLabel}" Text="{Binding Date, StringFormat='Date: {0}'}"/>
+        <Label Style="{StaticResource BaseLabel}" Text="{Binding IOSVesrion, StringFormat='iOS Version: {0}'}"/>
+        <!--Bonsai Snippets - XAMLData-->
     </StackLayout>
 </b:ControlBase>

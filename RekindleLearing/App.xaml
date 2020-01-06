@@ -15,6 +15,7 @@
             <Color x:Key="textWhite">#ffffff</Color>
             <Color x:Key="textBlack">#000000</Color>
             <Color x:Key="textGray">Gray</Color>
+            <Color x:Key="OrangeText">Orange</Color>
 
              <!--Controls-->
             <Style x:Key="BaseButton" TargetType="Button">
@@ -43,10 +44,19 @@
                 <Setter Property="Padding" Value="4" />
             </Style>
 
+            <Style x:Key="LinkButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="{StaticResource OrangeText}" />
+                <Setter Property="Padding" Value="4" />
+            </Style>
+
             <!--Labels-->
             <!--Bold Label-->
             <Style x:Key="boldLabel" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
                 <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <Style x:Key="HeadingLabel" TargetType="Label" BasedOn="{StaticResource boldLabel}">
+                <Setter Property="FontSize" Value="16" />
             </Style>
             
             <!--Centered Label-->

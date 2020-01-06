@@ -8,10 +8,10 @@
     x:Class="RekindleLearing.Trunk.View.Control.ServerInfoControlView"
     x:TypeArguments="v:ServerInfoControlView,m:ServerInfoControlViewModel">
     <StackLayout HorizontalOptions="FillAndExpand">
-       <Label Text="{Binding HeadingLabel}"/>
-<Label Text="{Binding Version}"/>
-<Label Text="{Binding Build}"/>
-<Label Text="{Binding Date}"/>
+       <Label Style="{StaticResource HeadingLabel}" Text="Server" />
+        <Label Style="{StaticResource BaseLabel}" Text="{Binding Version, StringFormat='Version: {0}'}"/>
+        <Label Style="{StaticResource BaseLabel}" Text="{Binding Build, StringFormat='Build: {0}'}"/>
+        <Label Style="{StaticResource BaseLabel}" Text="{Binding Date, StringFormat='Date: {0}'}"/>
  <!--Bonsai Snippets - XAMLData-->
     </StackLayout>
 </b:ControlBase>

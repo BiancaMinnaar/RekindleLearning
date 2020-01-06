@@ -8,8 +8,7 @@
     x:Class="RekindleLearing.Trunk.View.Control.LinkButtonControlView"
     x:TypeArguments="v:LinkButtonControlView,m:LinkButtonControlViewModel">
     <StackLayout HorizontalOptions="FillAndExpand">
-       <Label Text="{Binding ButtonText}"/>
-<Label Text="{Binding URL}"/>
- <!--Bonsai Snippets - XAMLData-->
+        <Button Style="{StaticResource LinkButton}" Text="{Binding ButtonText}" />
+        <!--Bonsai Snippets - XAMLData-->
     </StackLayout>
 </b:ControlBase>

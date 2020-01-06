@@ -30,7 +30,7 @@
                 <control:LinkButtonControlView ViewModel="{Binding EULALinkButton}" />
         </StackLayout>
         <StackLayout Grid.Column="1" Grid.Row="2"
-            Orientation="Vertical">
+            Orientation="Vertical" Spacing="10">
             <control:ServerInfoControlView ViewModel="{Binding ServerInfoTile}" />
             <control:ClientInfoControlView ViewModel="{Binding ClientInfoTile}" />
         </StackLayout>
