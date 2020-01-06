@@ -5,6 +5,7 @@
     xmlns:b="clr-namespace:RekindleLearing.Root"
     xmlns:m="clr-namespace:RekindleLearing.Trunk.ViewModel.Control"
     xmlns:v="clr-namespace:RekindleLearing.Trunk.View.Control"
+    IsVisible="{Binding IsVisible}"
     x:Class="RekindleLearing.Trunk.View.Control.NoCourseSelectedButtonControlView"
     x:TypeArguments="v:NoCourseSelectedButtonControlView,m:NoCourseSelectedButtonControlViewModel">
     <StackLayout HorizontalOptions="FillAndExpand" HeightRequest="100">

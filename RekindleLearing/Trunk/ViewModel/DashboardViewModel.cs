@@ -76,8 +76,14 @@ namespace RekindleLearing.Trunk.ViewModel
  //#Bonsai Snippets - Properties
         public DashboardViewModel()
         {
-            CourseWideModel = new CourseWideButtonControlViewModel();
-            NoCourseWideModel = new NoCourseSelectedButtonControlViewModel();
+            CourseWideModel = new CourseWideButtonControlViewModel
+            {
+                IsVisible = false
+            };
+            NoCourseWideModel = new NoCourseSelectedButtonControlViewModel
+            {
+                IsVisible = true
+            };
             MyRekindleModel = new ImageButtonControlViewModel
             {
                 ImageName = "Person",

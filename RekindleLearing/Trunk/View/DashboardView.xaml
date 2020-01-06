@@ -21,6 +21,7 @@
                HorizontalOptions="Center" VerticalOptions="Start"></Label>
         <StackLayout HeightRequest="20" />
         <control:CourseWideButtonControlView HorizontalOptions="Start" ViewModel="{Binding CourseWideModel}" />
+        <control:NoCourseSelectedButtonControlView HorizontalOptions="FillAndExpand" ViewModel="{Binding NoCourseWideModel}" />
         <control:ImageButtonControlView HorizontalOptions="Start" ViewModel="{Binding MyRekindleModel}" />
         <control:ImageButtonControlView HorizontalOptions="Start" ViewModel="{Binding MyCoursesModel}" />
         <control:ImageButtonControlView HorizontalOptions="Start" ViewModel="{Binding MoreCoursesModel}" />
