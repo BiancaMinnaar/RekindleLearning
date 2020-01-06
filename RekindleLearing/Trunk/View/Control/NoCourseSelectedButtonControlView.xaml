@@ -7,7 +7,19 @@
     xmlns:v="clr-namespace:RekindleLearing.Trunk.View.Control"
     x:Class="RekindleLearing.Trunk.View.Control.NoCourseSelectedButtonControlView"
     x:TypeArguments="v:NoCourseSelectedButtonControlView,m:NoCourseSelectedButtonControlViewModel">
-    <StackLayout HorizontalOptions="FillAndExpand">
+    <StackLayout HorizontalOptions="FillAndExpand" HeightRequest="100">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="0" BackgroundColor="{StaticResource lightBlue}">
+                <Button ImageSource="SelectCourse" CornerRadius="12" HeightRequest="24" WidthRequest="24" />
+            </StackLayout>
+            <StackLayout Grid.Column="1" BackgroundColor="White">
+                <Label Text="No CourseSelected" />
+            </StackLayout>
+        </Grid>
         <!--Bonsai Snippets - XAMLData-->
     </StackLayout>
 </b:ControlBase>

@@ -3,6 +3,7 @@ using RekindleLearing.Root.Repository;
 using RekindleLearing.Trunk.ViewModel;
 using RekindleLearing.Interface.Repository;
 using RekindleLearing.Interface.Service;
+using Xamarin.Forms;
 
 namespace RekindleLearing.Implementation.Repository
 {
@@ -16,11 +17,11 @@ namespace RekindleLearing.Implementation.Repository
             _Service = service;
         }
         
-       public async Task LoginUserAsync(LoginViewModel model)
+        public async Task LoginUserAsync(LoginViewModel model)
         {
             model.LoginModel.IsLoggedIn = true;
-            //if (model.LoginModel.IsLoggedIn)
-            //    await
+            if (model.LoginModel.IsLoggedIn)
+                await Shell.Current.GoToAsync("dashboard");
         } //#Bonsai Snippets - MethodDefinitions
     }
 }

@@ -7,7 +7,7 @@ namespace RekindleLearing.Trunk.ViewModel.Control
     {
         public new event PropertyChangedEventHandler PropertyChanged;
 
-       private string imageName;
+        private string imageName;
         public string ImageName
         {
             get { return imageName; }
@@ -18,7 +18,7 @@ namespace RekindleLearing.Trunk.ViewModel.Control
             }
         }
 
-private string text;
+        private string text;
         public string Text
         {
             get { return text; }

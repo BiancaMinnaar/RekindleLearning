@@ -27,7 +27,8 @@
         <Label Text="password" Style="{StaticResource BaseLabel}" />
         <Entry HorizontalOptions="FillAndExpand" Style="{StaticResource BaseTextInput}"
                Text="{Binding LoginModel.Password}" IsPassword="True"></Entry>
-        <Button Text="Login" Style="{StaticResource OrangeButton}" HorizontalOptions="FillAndExpand" />
+        <Button Text="Login" Style="{StaticResource OrangeButton}" HorizontalOptions="FillAndExpand"
+                Clicked="LoginUser"/>
         <Button Text="Reset Password" Style="{StaticResource LinkButton}" HorizontalOptions="Center" />
         <!--#Bonsai Snippets - Controls-->
     </StackLayout>

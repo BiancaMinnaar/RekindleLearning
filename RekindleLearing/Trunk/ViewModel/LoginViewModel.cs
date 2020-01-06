@@ -22,7 +22,7 @@ namespace RekindleLearing.Trunk.ViewModel
 
         public LoginViewModel()
         {
-            UserViewModel = new UserViewModel();
+            LoginModel = new UserViewModel();
         }   
     }
 }

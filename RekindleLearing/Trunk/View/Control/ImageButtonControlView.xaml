@@ -7,9 +7,9 @@
     xmlns:v="clr-namespace:RekindleLearing.Trunk.View.Control"
     x:Class="RekindleLearing.Trunk.View.Control.ImageButtonControlView"
     x:TypeArguments="v:ImageButtonControlView,m:ImageButtonControlViewModel">
-    <StackLayout HorizontalOptions="FillAndExpand">
-       <Label Text="{Binding ImageName}"/>
-<Label Text="{Binding Text}"/>
+    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+       <Image Source="{Binding ImageName}" HorizontalOptions="Start" WidthRequest="25" HeightRequest="25"/>
+       <Label Text="{Binding Text}" Style="{StaticResource BaseLabel}" HorizontalOptions="StartAndExpand"/>
  <!--Bonsai Snippets - XAMLData-->
     </StackLayout>
 </b:ControlBase>

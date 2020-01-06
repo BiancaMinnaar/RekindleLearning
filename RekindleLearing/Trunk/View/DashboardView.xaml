@@ -15,8 +15,18 @@
             <image:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    <StackLayout Orientation="Vertical">
-        <StackLayout HeightRequest="30" />
-        <!--#Bonsai Snippets - Controls-->
+    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout HeightRequest="30" HorizontalOptions="Start" />
+        <Label Text="RekindleLearing" Style="{StaticResource MainHeadingLabel}"
+               HorizontalOptions="Center" VerticalOptions="Start"></Label>
+        <StackLayout HeightRequest="20" />
+        <control:CourseWideButtonControlView HorizontalOptions="Start" ViewModel="{Binding CourseWideModel}" />
+        <control:ImageButtonControlView HorizontalOptions="Start" ViewModel="{Binding MyRekindleModel}" />
+        <control:ImageButtonControlView HorizontalOptions="Start" ViewModel="{Binding MyCoursesModel}" />
+        <control:ImageButtonControlView HorizontalOptions="Start" ViewModel="{Binding MoreCoursesModel}" />
+        <control:ImageButtonControlView HorizontalOptions="Start" ViewModel="{Binding KnowledgeMatchModel}" />
+        <BoxView HeightRequest="2" BackgroundColor="White" VerticalOptions="EndAndExpand" />
+        <Button Text="About This App" HorizontalOptions="Center" />
+         <!--#Bonsai Snippets - Controls-->
     </StackLayout>
 </base:ProjectBaseContentPage>

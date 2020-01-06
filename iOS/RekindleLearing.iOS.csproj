@@ -110,6 +110,10 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Person.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Person.imageset\Add.png" />
+    <ImageAsset Include="Assets.xcassets\SelectCourse.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SelectCourse.imageset\Folder.png" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
@@ -136,6 +140,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Injection\" />
+    <Folder Include="Assets.xcassets\Person.imageset\" />
+    <Folder Include="Assets.xcassets\SelectCourse.imageset\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

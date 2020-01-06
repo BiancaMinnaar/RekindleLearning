@@ -13,7 +13,10 @@ namespace RekindleLearing.Trunk.View
         {
             InitializeComponent();
             
-           Routing.RegisterRoute("system", typeof(SystemView)); //#Bonsai Snippets - Routes
+            Routing.RegisterRoute("system", typeof(SystemView));
+            Routing.RegisterRoute("login", typeof(LoginView));
+            Routing.RegisterRoute("dashboard", typeof(DashboardView));
+            //#Bonsai Snippets - Routes
         }
     }
 }
