@@ -127,6 +127,10 @@
       <DependentUpon>NoCourseSelectedButtonControlView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\NoCourseSelectedButtonControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\IDashboardRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\DashboardRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IDashboardService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\DashboardService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />

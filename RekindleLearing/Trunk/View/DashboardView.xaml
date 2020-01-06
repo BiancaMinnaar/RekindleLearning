@@ -27,7 +27,7 @@
         <control:ImageButtonControlView HorizontalOptions="Start" ViewModel="{Binding MoreCoursesModel}" />
         <control:ImageButtonControlView HorizontalOptions="Start" ViewModel="{Binding KnowledgeMatchModel}" />
         <BoxView HeightRequest="2" BackgroundColor="White" VerticalOptions="EndAndExpand" />
-        <Button Text="About This App" HorizontalOptions="Center" />
+        <Button Text="About This App" HorizontalOptions="Center" Clicked="ShowAbout" />
          <!--#Bonsai Snippets - Controls-->
     </StackLayout>
 </base:ProjectBaseContentPage>

@@ -14,6 +14,11 @@ namespace RekindleLearing.Implementation.View
             BindingContext = _ViewController.InputObject;
         }
 
+        void ShowAbout(object sender, EventArgs e)
+        {
+            _ViewController.ShowAbout()();
+        }
+
         //#Bonsai Snippets - ViewControllerMethodCalls
     }
 }

@@ -62,7 +62,10 @@
             </Style>
             <Style x:Key="MainHeadingLabel" TargetType="Label" BasedOn="{StaticResource boldLabel}">
                 <Setter Property="FontSize" Value="20" />
-            </Style>            
+            </Style>
+            <Style x:Key="HeadingLabel" TargetType="Label" BasedOn="{StaticResource boldLabel}">
+                <Setter Property="FontSize" Value="16" />
+            </Style>
             <!--Centered Label-->
             <Style x:Key="centerLabel" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
                 <Setter Property="HorizontalTextAlignment" Value="Center" />

@@ -4,6 +4,6 @@
     xmlns:control="clr-namespace:RekindleLearing.Trunk.View.Control"
        xmlns:view="clr-namespace:RekindleLearing.Implementation.View"
        x:Class="RekindleLearing.Trunk.View.AppShell">
-    <ShellContent Title="System"
+    <ShellContent Title="Login"
                   ContentTemplate="{DataTemplate view:LoginView}" />
 </Shell>
