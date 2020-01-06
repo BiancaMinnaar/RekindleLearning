@@ -46,6 +46,10 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\Control\NoCourseSelectedButtonControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -119,6 +123,10 @@
       <DependentUpon>CourseWideButtonControlView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\CourseWideButtonControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\Control\NoCourseSelectedButtonControlView.xaml.cs">
+      <DependentUpon>NoCourseSelectedButtonControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\NoCourseSelectedButtonControlViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />
