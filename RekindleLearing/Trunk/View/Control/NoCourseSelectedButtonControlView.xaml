@@ -15,7 +15,8 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <StackLayout Grid.Column="0" BackgroundColor="{StaticResource lightBlue}">
-                <Button ImageSource="SelectCourse" CornerRadius="12" HeightRequest="24" WidthRequest="24" />
+                <Button ImageSource="SelectCourse" CornerRadius="12" HeightRequest="24" WidthRequest="24"
+                        Command="{Binding CourseListNavigation}"/>
             </StackLayout>
             <StackLayout Grid.Column="1" BackgroundColor="White">
                 <Label Text="No CourseSelected" />

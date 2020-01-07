@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Windows.Input;
 using RekindleLearing.Root.ViewModel;
 
 namespace RekindleLearing.Trunk.ViewModel.Control
@@ -15,6 +16,17 @@ namespace RekindleLearing.Trunk.ViewModel.Control
             {
                 isVisible = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("IsVisible"));
+            }
+        }
+
+        private ICommand courseListNavigation;
+        public ICommand CourseListNavigation
+        {
+            get { return courseListNavigation; }
+            set
+            {
+                courseListNavigation = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CourseListNavigation"));
             }
         }
         //#Bonsai Snippets - Properties

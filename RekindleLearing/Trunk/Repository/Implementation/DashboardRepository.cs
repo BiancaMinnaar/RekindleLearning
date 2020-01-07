@@ -29,6 +29,7 @@ namespace RekindleLearing.Implementation.Repository
             model.MyCoursesModel.ActionCommand = new Command(() => NavigateRoute()("myCourses"));
             model.MoreCoursesModel.ActionCommand = new Command(() => NavigateRoute()("courseList"));
             model.KnowledgeMatchModel.ActionCommand = new Command(() => NavigateRoute()("knowledgeMatch"));
+            model.NoCourseWideModel.CourseListNavigation = new Command(() => NavigateRoute()("myCourses"));
         }
 
         Func<string, Task> NavigateRoute()
