@@ -143,5 +143,10 @@
     <Folder Include="Assets.xcassets\Person.imageset\" />
     <Folder Include="Assets.xcassets\SelectCourse.imageset\" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Injection\Data1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

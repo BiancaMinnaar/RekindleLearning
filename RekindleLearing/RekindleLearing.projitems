@@ -171,6 +171,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\KnowledgeMatchView.xaml.cs">
       <DependentUpon>KnowledgeMatchView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\CourseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\CardViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\ICourseListRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\CourseListRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\ICourseListService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\CourseListService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />

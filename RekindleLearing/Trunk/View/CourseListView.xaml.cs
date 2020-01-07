@@ -11,10 +11,13 @@ namespace RekindleLearing.Implementation.View
         public CourseListView()
         {
             InitializeComponent();
+            _ViewController.GetCourseList()();
             BindingContext = _ViewController.InputObject;
         }
 
-        //#Bonsai Snippets - ViewControllerMethodCalls
+       void GetCourseList(object sender, EventArgs e)
+        {
+        } //#Bonsai Snippets - ViewControllerMethodCalls
     }
 }
 
