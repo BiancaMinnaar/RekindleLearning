@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel;
+using System.Windows.Input;
 using RekindleLearing.Root.ViewModel;
 
 namespace RekindleLearing.Trunk.ViewModel
@@ -84,6 +85,17 @@ namespace RekindleLearing.Trunk.ViewModel
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CardsCount"));
             }
         }
- //#Bonsai Snippets - Properties
+
+        private ICommand navigationCommand;
+        public ICommand NavigationCommand
+        {
+            get { return navigationCommand; }
+            set
+            {
+                navigationCommand = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("NavigationCommand"));
+            }
+        }
+        //#Bonsai Snippets - Properties
     }
 }

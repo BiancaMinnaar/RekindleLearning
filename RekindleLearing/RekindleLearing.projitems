@@ -74,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\QuestionPadView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -199,6 +203,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\CourseDetailsRepository.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\ICourseDetailsService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\CourseDetailsService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\IQuestionPadViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\QuestionPadViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\QuestionPadViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\QuestionPadView.xaml.cs">
+      <DependentUpon>QuestionPadView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\IQuestionPadRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\QuestionPadRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IQuestionPadService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\QuestionPadService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />

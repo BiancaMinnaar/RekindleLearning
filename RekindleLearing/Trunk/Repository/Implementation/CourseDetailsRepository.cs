@@ -5,6 +5,7 @@ using RekindleLearing.Interface.Repository;
 using RekindleLearing.Interface.Service;
 using System.Linq;
 using System.Net;
+using Xamarin.Forms;
 
 namespace RekindleLearing.Implementation.Repository
 {
@@ -26,6 +27,8 @@ namespace RekindleLearing.Implementation.Repository
             model.LessonsCount = course.Lessons?.Count().ToString();
             model.CourseTitle = course.Title;
             model.Introduction = WebUtility.HtmlDecode(course.Introducton);
+            model.NavigationCommand = new Command(async () =>
+                Shell.Current.GoToAsync($"questionPad?id{course.Uid.ToString()}"));
             //model.Description = course.
         } //#Bonsai Snippets - MethodDefinitions
     }
