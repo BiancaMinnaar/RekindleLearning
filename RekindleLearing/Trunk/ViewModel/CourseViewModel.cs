@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Windows.Input;
 using RekindleLearing.Root.ViewModel;
 
 namespace RekindleLearing.Trunk.ViewModel
@@ -29,7 +30,19 @@ private string title;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Title"));
             }
         }
-private List<string> lessons;
+
+        private string introducton;
+        public string Introducton
+        {
+            get { return introducton; }
+            set
+            {
+                introducton = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Introducton"));
+            }
+        }
+
+        private List<string> lessons;
         public List<string> Lessons
         {
             get { return lessons; }
@@ -69,6 +82,17 @@ private byte[] courseVideo;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CourseVideo"));
             }
         }
- //#Bonsai Snippets - Properties
+
+        private ICommand navigationCommand;
+        public ICommand NavigationCommand
+        {
+            get { return navigationCommand; }
+            set
+            {
+                navigationCommand = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("NavigationCommand"));
+            }
+        }
+        //#Bonsai Snippets - Properties
     }
 }

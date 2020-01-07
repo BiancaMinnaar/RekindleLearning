@@ -20,6 +20,7 @@ namespace RekindleLearing.Trunk.View
             Routing.RegisterRoute("myCourses", typeof(MyCoursesView));
             Routing.RegisterRoute("courseList", typeof(CourseListView));
             Routing.RegisterRoute("knowledgeMatch", typeof(KnowledgeMatchView));
+            Routing.RegisterRoute("courseDetail", typeof(CourseDetailsView));
             //#Bonsai Snippets - Routes
         }
     }

@@ -10,12 +10,19 @@
     <StackLayout HorizontalOptions="FillAndExpand">
        <CollectionView ItemsSource="{Binding Courses}">
            <CollectionView.ItemsLayout>
-               <LinearItemsLayout Orientation="Horizontal" />
-           </CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                                     Span="2"/>
+                </CollectionView.ItemsLayout>
            <CollectionView.ItemTemplate>
            <DataTemplate>
                <StackLayout>
-                   <Image Source="{Binding CourseImage, Converter={StaticResource ByteArrayToImage}}" WidthRequest="25" HeightRequest="25" />
+                   <StackLayout.GestureRecognizers>
+                       <TapGestureRecognizer Command="{Binding NavigationCommand}"
+                                             CommandParameter="{Binding Uid}"
+                                             NumberOfTapsRequired="1"/>
+                   </StackLayout.GestureRecognizers>
+                   <Image Source="{Binding CourseImage, Converter={StaticResource ByteArrayToImage}}"
+                          WidthRequest="100" HeightRequest="100" />
                    <Label Text="{Binding Title}" />
                </StackLayout>
            </DataTemplate>
