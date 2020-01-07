@@ -66,6 +66,10 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\Control\CourseListControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -177,6 +181,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\CourseListRepository.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\ICourseListService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\CourseListService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\Control\CourseListControlView.xaml.cs">
+      <DependentUpon>CourseListControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\CourseListControlViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />

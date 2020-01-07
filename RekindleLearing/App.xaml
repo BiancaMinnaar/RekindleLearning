@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Application 
     xmlns="http://xamarin.com/schemas/2014/forms" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:image="clr-namespace:MobileBonsai.View"
     x:Class="RekindleLearing.App">
     <Application.Resources>
         <!-- Application resource dictionary -->
         <ResourceDictionary>
             <!--Converters-->
-           
+            <image:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
+
             <!--Colors-->
             <Color x:Key="primaryBlue">#00acfc</Color>
             <Color x:Key="lightBlue">#69deff</Color>

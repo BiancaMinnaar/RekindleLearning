@@ -17,6 +17,7 @@
     </ContentPage.Resources>
     <StackLayout Orientation="Vertical">
         <StackLayout HeightRequest="30" />
+        <control:CourseListControlView ViewModel="{Binding CourseList}" />
         <!--#Bonsai Snippets - Controls-->
     </StackLayout>
 </base:ProjectBaseContentPage>
