@@ -51,6 +51,13 @@
                 <Setter Property="Padding" Value="4" />
             </Style>
 
+            <Style x:Key="OrangeTextButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="{StaticResource textGray}" />
+                <Setter Property="TextColor" Value="{StaticResource OrangeText}" />
+                <Setter Property="Padding" Value="4" />
+                <Setter Property="CornerRadius" Value="8" />
+            </Style>
+
             <Style x:Key="LinkButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
                 <Setter Property="BackgroundColor" Value="Transparent" />
                 <Setter Property="TextColor" Value="{StaticResource OrangeText}" />

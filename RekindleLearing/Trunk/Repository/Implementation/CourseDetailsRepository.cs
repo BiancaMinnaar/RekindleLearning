@@ -4,6 +4,7 @@ using RekindleLearing.Trunk.ViewModel;
 using RekindleLearing.Interface.Repository;
 using RekindleLearing.Interface.Service;
 using System.Linq;
+using System.Net;
 
 namespace RekindleLearing.Implementation.Repository
 {
@@ -24,7 +25,7 @@ namespace RekindleLearing.Implementation.Repository
             model.CardsCount = course.Cards?.Count().ToString();
             model.LessonsCount = course.Lessons?.Count().ToString();
             model.CourseTitle = course.Title;
-            model.Introduction = course.Introducton;
+            model.Introduction = WebUtility.HtmlDecode(course.Introducton);
             //model.Description = course.
         } //#Bonsai Snippets - MethodDefinitions
     }
