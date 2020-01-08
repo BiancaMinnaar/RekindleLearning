@@ -17,11 +17,22 @@ namespace RekindleLearing.Implementation.Repository
         {
             _Service = service;
         }
-        
+
         public void GetCardsForIDAsync(QuestionPadViewModel model)
         {
-            var cards = _MasterRepo.DataSource.CourseList.FirstOrDefault(a => a.Uid.ToString().Equals(model.ID)).Cards;
-            //model.CardList = cards;
+            var cards = from card in
+                            _MasterRepo.DataSource.CourseList.FirstOrDefault(a => a.Uid.ToString().Equals(model.ID)).Cards
+                        select new CardViewModel
+                        {
+                            Title = card.title,
+                            Question = card.question,
+                            Answers = (from answer in card.answerList
+                                      select new AnswerViewModel
+                                      {
+                                          AnswerOptionText = answer.answer
+                                      }).ToList()
+                        };
+            model.CardList = cards.ToList();
         }
 
         public async Task SetNavigationAsync(QuestionPadViewModel model)

@@ -15,7 +15,7 @@ namespace RekindleLearing.Implementation.View
             {
                 _ViewController.InputObject.ID = value;
                 _ViewController.GetCardsForID();
-                _ViewController.SetNavigation()();
+                //_ViewController.SetNavigation()();
                 BindingContext = _ViewController.InputObject;
             }
         }
@@ -25,10 +25,7 @@ namespace RekindleLearing.Implementation.View
             InitializeComponent();
         }
 
-       void SetNavigation(object sender, EventArgs e)
-        {
-            _ViewController.SetNavigation()();
-        } //#Bonsai Snippets - ViewControllerMethodCalls
+        //#Bonsai Snippets - ViewControllerMethodCalls
     }
 }
 

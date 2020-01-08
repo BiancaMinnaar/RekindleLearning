@@ -22,20 +22,22 @@
             </DataTemplate>
             <DataTemplate x:Key="CheckboxQuestionTemplate">
                 <ViewCell>
-                    <control:CheckBoxItemControlView ViewModel="{Binding .}" />
+                    <control:CheckboxQuestionControlView ViewModel="{Binding .}"  />
                 </ViewCell>
             </DataTemplate>
             <selectors:QuestionPadTemplateSelector x:Key="questionTypeSelector"
-                                            questionCheckbox="{StaticResource CheckBoxItemControlView}" />
+                                            questionCheckbox="{StaticResource CheckboxQuestionTemplate}" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout Orientation="Vertical">
         <StackLayout HeightRequest="30" />
-        <Label Text="Here" />
         <ListView
+            HasUnevenRows="True"
+            SeparatorVisibility="None"
             HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
             ItemsSource="{Binding CardList}"
             ItemTemplate="{StaticResource questionTypeSelector}"/>
+
         <!--#Bonsai Snippets - Controls-->
     </StackLayout>
 </base:ProjectBaseContentPage>

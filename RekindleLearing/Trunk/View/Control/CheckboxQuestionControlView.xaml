@@ -8,12 +8,17 @@
     x:Class="RekindleLearing.Trunk.View.Control.CheckboxQuestionControlView"
     x:TypeArguments="v:CheckboxQuestionControlView,m:CardViewModel">
     <StackLayout HorizontalOptions="FillAndExpand">
-        <Label Text="{Binding question}"/>
-        <ListView ItemsSource="{Binding Answers}">
+        <Label Text="{Binding Question}"/>
+        <ListView
+            HasUnevenRows="True"
+            SeparatorVisibility="None"
+            ItemsSource="{Binding Answers}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <v:CheckBoxItemControlView ViewModel="{Binding .}" />
+                        <StackLayout>
+                            <v:CheckBoxItemControlView ViewModel="{Binding .}" />                        
+                        </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
