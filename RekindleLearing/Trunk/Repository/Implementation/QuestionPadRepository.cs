@@ -20,7 +20,8 @@ namespace RekindleLearing.Implementation.Repository
         
         public void GetCardsForIDAsync(QuestionPadViewModel model)
         {
-            model.CardList = _MasterRepo.DataSource.CourseList.FirstOrDefault(a => a.Uid.Equals(model.ID)).Cards;
+            var cards = _MasterRepo.DataSource.CourseList.FirstOrDefault(a => a.Uid.ToString().Equals(model.ID)).Cards;
+            model.CardList = cards;
         } //#Bonsai Snippets - MethodDefinitions
     }
 }

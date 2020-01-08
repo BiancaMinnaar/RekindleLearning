@@ -7,16 +7,30 @@
     xmlns:p="clr-namespace:RekindleLearing.Implementation.ViewController"
     xmlns:b="clr-namespace:RekindleLearing.Implementation.View"
     xmlns:control="clr-namespace:RekindleLearing.Trunk.View.Control"
+    xmlns:selectors="clr-namespace:RekindleLearing.Trunk.View.TemplateSelector"
     xmlns:image="clr-namespace:MobileBonsai.View"
     x:Class="RekindleLearing.Implementation.View.QuestionPadView" 
     x:TypeArguments="p:QuestionPadViewController, m:QuestionPadViewModel">
     <ContentPage.Resources>
         <ResourceDictionary>
             <image:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
+
+            <DataTemplate x:Key="RadioButtonQuestionTemplate">
+                <ViewCell>
+                    <control:RadioButtonQuestionControlView ViewModel="{Binding .}" />
+                </ViewCell>
+            </DataTemplate>
+            <selectors:RadioButtonTemplateSelector x:Key="questionTypeSelector"
+                                            questionCheckbox="{StaticResource RadioButtonQuestionTemplate}" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout Orientation="Vertical">
         <StackLayout HeightRequest="30" />
+        <Label Text="Here" />
+        <ListView
+            HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+            ItemsSource="{Binding CardList}"
+            ItemTemplate="{StaticResource questionTypeSelector}"/>
         <!--#Bonsai Snippets - Controls-->
     </StackLayout>
 </base:ProjectBaseContentPage>

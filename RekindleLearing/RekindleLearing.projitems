@@ -78,6 +78,10 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\Control\RadioButtonQuestionControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -213,6 +217,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\QuestionPadRepository.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IQuestionPadService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\QuestionPadService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\TemplateSelector\RadioButtonTemplateSelector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\Control\RadioButtonQuestionControlView.xaml.cs">
+      <DependentUpon>RadioButtonQuestionControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\RadioButtonQuestionControlViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />
@@ -230,5 +239,6 @@
     <Folder Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\" />
     <Folder Include="$(MSBuildThisFileDirectory)Trunk\View\Popup\" />
     <Folder Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Popup\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\View\TemplateSelector\" />
   </ItemGroup>
 </Project>

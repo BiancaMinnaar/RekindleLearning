@@ -27,9 +27,10 @@ namespace RekindleLearing.Trunk.ViewModel
             public string timezone { get; set; }
 
         }
-        public class CardDataModel
-        {
-            public string title { get; set; }
+        public class CardDataModel : ProjectBaseViewModel, INotifyPropertyChanged
+    {
+        public new event PropertyChangedEventHandler PropertyChanged;
+        public string title { get; set; }
             public string priority { get; set; }
             public string type { get; set; }
             public string question { get; set; }

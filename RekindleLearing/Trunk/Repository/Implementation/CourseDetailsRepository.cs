@@ -28,7 +28,7 @@ namespace RekindleLearing.Implementation.Repository
             model.CourseTitle = course.Title;
             model.Introduction = WebUtility.HtmlDecode(course.Introducton);
             model.NavigationCommand = new Command(async () =>
-                Shell.Current.GoToAsync($"questionPad?id{course.Uid.ToString()}"));
+                Shell.Current.GoToAsync($"questionPad?id={course.Uid.ToString()}"));
             //model.Description = course.
         } //#Bonsai Snippets - MethodDefinitions
     }

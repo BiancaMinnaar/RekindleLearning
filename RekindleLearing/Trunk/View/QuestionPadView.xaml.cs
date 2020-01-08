@@ -21,12 +21,10 @@ namespace RekindleLearing.Implementation.View
 
         public QuestionPadView()
         {
-            
+            InitializeComponent();
         }
 
-       void GetCardsForID(object sender, EventArgs e)
-        {
-        } //#Bonsai Snippets - ViewControllerMethodCalls
+        //#Bonsai Snippets - ViewControllerMethodCalls
     }
 }
 
