@@ -20,8 +20,13 @@
                     <control:RadioButtonQuestionControlView ViewModel="{Binding .}" />
                 </ViewCell>
             </DataTemplate>
-            <selectors:RadioButtonTemplateSelector x:Key="questionTypeSelector"
-                                            questionCheckbox="{StaticResource RadioButtonQuestionTemplate}" />
+            <DataTemplate x:Key="CheckboxQuestionTemplate">
+                <ViewCell>
+                    <control:CheckBoxItemControlView ViewModel="{Binding .}" />
+                </ViewCell>
+            </DataTemplate>
+            <selectors:QuestionPadTemplateSelector x:Key="questionTypeSelector"
+                                            questionCheckbox="{StaticResource CheckBoxItemControlView}" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout Orientation="Vertical">

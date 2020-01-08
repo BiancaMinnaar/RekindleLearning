@@ -19,8 +19,8 @@ namespace RekindleLearing.Trunk.ViewModel
             }
         }
 
-        private List<CardDataModel> cardList;
-        public List<CardDataModel> CardList
+        private List<CardViewModel> cardList;
+        public List<CardViewModel> CardList
         {
             get { return cardList; }
             set

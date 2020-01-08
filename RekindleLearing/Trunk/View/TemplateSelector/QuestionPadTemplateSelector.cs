@@ -4,11 +4,12 @@ using Xamarin.Forms;
 
 namespace RekindleLearing.Trunk.View.TemplateSelector
 {
-    public class RadioButtonTemplateSelector : DataTemplateSelector
+    public class QuestionPadTemplateSelector : DataTemplateSelector
     {
         public DataTemplate questionCheckbox { get; set; }
+        public DataTemplate questionRadioButton { get; set; }
 
-        //public RadioButtonTemplateSelector()
+        //public QuestionPadTemplateSelector()
         //{
         //    questionCheckbox = new DataTemplate(typeof(RadioButtonQuestionControlView));
         //}

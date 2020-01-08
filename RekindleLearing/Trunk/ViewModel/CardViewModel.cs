@@ -4,45 +4,41 @@ using RekindleLearing.Root.ViewModel;
 
 namespace RekindleLearing.Trunk.ViewModel
 {
-
-        public class LastEdit
-        {
-            public string time { get; set; }
-            public string timezone { get; set; }
-
-        }
-        public class AnswerList
-        {
-            public string id { get; set; }
-            public string cardId { get; set; }
-            public string correct { get; set; }
-            public string position { get; set; }
-            public string answer { get; set; }
-            public LastEdit lastEdit { get; set; }
-
-        }
-        public class CreationDate
-        {
-            public string time { get; set; }
-            public string timezone { get; set; }
-
-        }
-        public class CardDataModel : ProjectBaseViewModel, INotifyPropertyChanged
+    public class CardViewModel : ProjectBaseViewModel, INotifyPropertyChanged
     {
         public new event PropertyChangedEventHandler PropertyChanged;
-        public string title { get; set; }
-            public string priority { get; set; }
-            public string type { get; set; }
-            public string question { get; set; }
-            public string questionContext { get; set; }
-            public string answerContext { get; set; }
-            public IList<AnswerList> answerList { get; set; }
-            public LastEdit lastEdit { get; set; }
-            public CreationDate creationDate { get; set; }
-            public string releaseStatus { get; set; }
-            public string editable { get; set; }
-            public string read { get; set; }
-            public string usergenerated { get; set; }
 
+       private string title;
+        public string Title
+        {
+            get { return title; }
+            set
+            {
+                title = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Title"));
+            }
         }
+private string question;
+        public string Question
+        {
+            get { return question; }
+            set
+            {
+                question = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Question"));
+            }
+        }
+
+        private List<AnswerViewModel> answers;
+        public List<AnswerViewModel> Answers
+        {
+            get { return answers; }
+            set
+            {
+                answers = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Answers"));
+            }
+        }
+ //#Bonsai Snippets - Properties
+    }
 }

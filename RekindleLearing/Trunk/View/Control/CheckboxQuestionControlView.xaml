@@ -5,19 +5,19 @@
     xmlns:b="clr-namespace:RekindleLearing.Root"
     xmlns:m="clr-namespace:RekindleLearing.Trunk.ViewModel"
     xmlns:v="clr-namespace:RekindleLearing.Trunk.View.Control"
-    x:Class="RekindleLearing.Trunk.View.Control.RadioButtonQuestionControlView"
-    x:TypeArguments="v:RadioButtonQuestionControlView,m:CardViewModel">
+    x:Class="RekindleLearing.Trunk.View.Control.CheckboxQuestionControlView"
+    x:TypeArguments="v:CheckboxQuestionControlView,m:CardViewModel">
     <StackLayout HorizontalOptions="FillAndExpand">
         <Label Text="{Binding question}"/>
-        <ListView ItemsSource="{Binding answerList}">
+        <ListView ItemsSource="{Binding Answers}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <v:RadioButtonItemControlView ViewModel="{Binding .}" />
+                        <v:CheckBoxItemControlView ViewModel="{Binding .}" />
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
- <!--Bonsai Snippets - XAMLData-->
+        <!--Bonsai Snippets - XAMLData-->
     </StackLayout>
 </b:ControlBase>

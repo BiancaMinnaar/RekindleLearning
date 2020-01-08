@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Input;
 using RekindleLearing.Root.ViewModel;
+using RekindleLearing.Trunk.ViewModel.Return;
 
 namespace RekindleLearing.Trunk.ViewModel
 {
@@ -20,7 +21,8 @@ namespace RekindleLearing.Trunk.ViewModel
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Uid"));
             }
         }
-private string title;
+
+        private string title;
         public string Title
         {
             get { return title; }
@@ -52,7 +54,8 @@ private string title;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Lessons"));
             }
         }
-private List<CardDataModel> cards;
+
+        private List<CardDataModel> cards;
         public List<CardDataModel> Cards
         {
             get { return cards; }
@@ -62,7 +65,8 @@ private List<CardDataModel> cards;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Cards"));
             }
         }
-private byte[] courseImage;
+
+        private byte[] courseImage;
         public byte[] CourseImage
         {
             get { return courseImage; }
@@ -72,7 +76,8 @@ private byte[] courseImage;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("CourseImage"));
             }
         }
-private byte[] courseVideo;
+
+        private byte[] courseVideo;
         public byte[] CourseVideo
         {
             get { return courseVideo; }

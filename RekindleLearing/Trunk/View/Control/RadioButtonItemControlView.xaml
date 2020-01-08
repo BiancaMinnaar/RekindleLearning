@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<b:ControlBase
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:b="clr-namespace:RekindleLearing.Root"
+    xmlns:m="clr-namespace:RekindleLearing.Trunk.ViewModel.Control"
+    xmlns:v="clr-namespace:RekindleLearing.Trunk.View.Control"
+    x:Class="RekindleLearing.Trunk.View.Control.RadioButtonItemControlView"
+    x:TypeArguments="v:RadioButtonItemControlView,m:RadioButtonItemControlViewModel">
+    <StackLayout HorizontalOptions="FillAndExpand">
+       <Grid Padding="4,4,4,4">
+        <Grid.RowDefinitions>
+        <RowDefinition Height="4" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="4" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="4" />
+        </Grid.ColumnDefinitions>
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding CheckCommand}" NumberOfTapsRequired="1"/>
+        </Grid.GestureRecognizers>
+        <BoxView Grid.Column="0" Grid.ColumnSpan="3"
+                 Grid.Row="0" Grid.RowSpan="3" CornerRadius="8" Style="{StaticResource BaseBubbelGray}"/>
+        <StackLayout Grid.Column="1" Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Label VerticalOptions="Center" HorizontalOptions="StartAndExpand"
+                   Text="{Binding Text}" Style="{StaticResource StandardLabel}" />
+            <Label VerticalOptions="Center" HorizontalOptions="End"
+                Text="{Binding AdvertisedCount}" Style="{StaticResource StandardLabel}" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Grid>
+                    <BoxView Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="26" HeightRequest="26" CornerRadius="4" BackgroundColor="Black" />
+                    <BoxView Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="24" HeightRequest="24" CornerRadius="4" BackgroundColor="White" />
+                    <Image Grid.Row="0" Source="GreenTick" IsVisible="{Binding RememberMe}" WidthRequest="24" HeightRequest="24" />
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+ <!--Bonsai Snippets - XAMLData-->
+    </StackLayout>
+</b:ControlBase>

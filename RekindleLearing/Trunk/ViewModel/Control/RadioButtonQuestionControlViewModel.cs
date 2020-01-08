@@ -8,8 +8,8 @@ namespace RekindleLearing.Trunk.ViewModel.Control
     {
         public new event PropertyChangedEventHandler PropertyChanged;
 
-        private CardDataModel questionCard;
-        public CardDataModel QuestionCard
+        private CardViewModel questionCard;
+        public CardViewModel QuestionCard
         {
             get { return questionCard; }
             set

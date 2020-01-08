@@ -79,7 +79,11 @@
             <Style x:Key="centerLabel" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
                 <Setter Property="HorizontalTextAlignment" Value="Center" />
             </Style>
-            
+            <!--Bubbles-->
+            <Style x:Key="BaseBubbelGray" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="{StaticResource textGray}" />
+                <Setter Property="Opacity" Value="0.25" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

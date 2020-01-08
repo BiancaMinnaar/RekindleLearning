@@ -4,9 +4,9 @@ using RekindleLearing.Trunk.ViewModel.Control;
 
 namespace RekindleLearing.Trunk.View.Control
 {
-    public partial class RadioButtonQuestionControlView : ControlBase<RadioButtonQuestionControlView, CardViewModel>
+    public partial class CheckBoxItemControlView : ControlBase<CheckBoxItemControlView, AnswerViewModel>
     {
-        public RadioButtonQuestionControlView()
+        public CheckBoxItemControlView()
         {
             InitializeComponent();
         }

@@ -114,6 +114,10 @@
     <ImageAsset Include="Assets.xcassets\Person.imageset\Add.png" />
     <ImageAsset Include="Assets.xcassets\SelectCourse.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\SelectCourse.imageset\Folder.png" />
+    <ImageAsset Include="Assets.xcassets\checkBlue.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\checkGray.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\checkBlue.imageset\checkbox blue.png" />
+    <ImageAsset Include="Assets.xcassets\checkGray.imageset\checkbox grey.png" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
@@ -142,6 +146,8 @@
     <Folder Include="Injection\" />
     <Folder Include="Assets.xcassets\Person.imageset\" />
     <Folder Include="Assets.xcassets\SelectCourse.imageset\" />
+    <Folder Include="Assets.xcassets\checkBlue.imageset\" />
+    <Folder Include="Assets.xcassets\checkGray.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Injection\Data1.xml">

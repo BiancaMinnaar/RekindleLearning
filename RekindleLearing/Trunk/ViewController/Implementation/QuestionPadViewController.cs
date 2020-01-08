@@ -6,6 +6,7 @@ using RekindleLearing.Implementation.Repository;
 using RekindleLearing.Implementation.Service;
 using RekindleLearing.Interface.Repository;
 using RekindleLearing.Interface.Service;
+using System;
 //#Bonsai Snippets - Usings
 
 namespace RekindleLearing.Implementation.ViewController
@@ -23,9 +24,17 @@ namespace RekindleLearing.Implementation.ViewController
  //#Bonsai Snippets - ServicedRepos
         }
         
-       public void GetCardsForID()
+        public void GetCardsForID()
         {
             _Repository.GetCardsForIDAsync(InputObject);
+        }
+
+        public Func<Task> SetNavigation()
+        {
+            return async () =>
+            {
+                await _Repository.SetNavigationAsync(InputObject);
+            };
         }
  //#Bonsai Snippets - Methods
     }
