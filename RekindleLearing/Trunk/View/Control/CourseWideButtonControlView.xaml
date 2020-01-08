@@ -8,7 +8,7 @@
     IsVisible="{Binding IsVisible}"
     x:Class="RekindleLearing.Trunk.View.Control.CourseWideButtonControlView"
     x:TypeArguments="v:CourseWideButtonControlView,m:CourseWideButtonControlViewModel">
-    <StackLayout HorizontalOptions="FillAndExpand">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <!--Bonsai Snippets - XAMLData-->
     </StackLayout>
 </b:ControlBase>

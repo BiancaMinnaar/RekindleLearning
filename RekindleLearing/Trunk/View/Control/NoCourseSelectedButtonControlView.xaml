@@ -8,18 +8,18 @@
     IsVisible="{Binding IsVisible}"
     x:Class="RekindleLearing.Trunk.View.Control.NoCourseSelectedButtonControlView"
     x:TypeArguments="v:NoCourseSelectedButtonControlView,m:NoCourseSelectedButtonControlViewModel">
-    <StackLayout HorizontalOptions="FillAndExpand" HeightRequest="100">
-        <Grid>
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="{StaticResource lightBlue}">
+        <Grid VerticalOptions="FillAndExpand">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <StackLayout Grid.Column="0" BackgroundColor="{StaticResource lightBlue}">
+            <StackLayout Grid.Column="0" VerticalOptions="Center">
                 <Button ImageSource="SelectCourse" CornerRadius="12" HeightRequest="24" WidthRequest="24"
                         Command="{Binding CourseListNavigation}"/>
             </StackLayout>
-            <StackLayout Grid.Column="1" BackgroundColor="White">
-                <Label Text="No CourseSelected" />
+            <StackLayout Grid.Column="1" VerticalOptions="FillAndExpand" BackgroundColor="White">
+                <Label Text="No CourseSelected" VerticalOptions="CenterAndExpand" />
             </StackLayout>
         </Grid>
         <!--Bonsai Snippets - XAMLData-->
